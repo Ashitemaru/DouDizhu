@@ -1,0 +1,36 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
+#include "struct.h"
+#include "card.h"
+
+#include <vector>
+#include <string>
+
+class MainWindow;
+
+class player {
+public:
+    player(MainWindow*);
+
+    std::vector<card*>& getHandInCard();
+    std::vector<int>& getChosenCardLocation();
+
+    void setChosenCard(int);
+
+    cardsCategory judgeOutDraw();
+
+private:
+    MainWindow* parent;
+
+    type playerType;
+    std::string ipAddress;
+
+    role gameRole;
+
+    int handInNumber;
+    std::vector<card*> handInCard;
+    std::vector<int> chosenCardLocation;
+};
+
+#endif // PLAYER_H
