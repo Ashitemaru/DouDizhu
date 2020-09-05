@@ -1,0 +1,91 @@
+#ifndef CONSTANT_H
+#define CONSTANT_H
+
+#define CARD_WIDTH 100
+#define CARD_HEIGHT 140
+
+#define CARD_SHIFT 20
+#define CARD_INTERVAL 20
+
+#define LOCAL_PLAYER_X 300
+#define LOCAL_PLAYER_Y 600
+
+#define TIMER_INTERVAL 100
+
+#define INPUT_BTN_INTERVAL 100
+
+#define WINDOW_WIDTH 1200
+#define WINDOW_HEIGHT 800
+
+#define LOCAL_AREA_WIDTH (WINDOW_WIDTH - 2 * LOCAL_PLAYER_X)
+
+#define BTN_WIDTH 200
+#define BTN_HEIGHT 40
+
+#define BTN_INTERVAL 50
+
+#define BTN_X ((WINDOW_WIDTH - BTN_WIDTH) / 2)
+#define BTN_Y ((WINDOW_HEIGHT - BTN_HEIGHT) / 2)
+
+#define DROP_WIDTH 100
+#define DROP_HEIGHT 40
+
+#define PASS_WIDTH 100
+#define PASS_HEIGHT 40
+
+#define DROP_X (LOCAL_PLAYER_X + LOCAL_AREA_WIDTH / 3 - DROP_WIDTH / 2)
+#define DROP_Y 550
+
+#define PASS_X (LOCAL_PLAYER_X + 2 * LOCAL_AREA_WIDTH / 3 - PASS_WIDTH / 2)
+#define PASS_Y 550
+
+#define OUTDRAW_WIDTH 300
+#define OUTDRAW_HEIGHT 140
+
+#define OUTDRAW_X ((WINDOW_WIDTH - OUTDRAW_WIDTH) / 2)
+#define OUTDRAW_Y 400
+
+#define LAND_WIDTH 380
+#define LAND_TOP_MARGIN 30
+#define LAND_CARD_INTERVAL 120
+#define LAND_X ((WINDOW_WIDTH - LAND_WIDTH) / 2)
+
+#define REMOTE_GAP 30
+#define REMOTE_HEIGHT 600
+#define REMOTE_Y 50
+
+#define TEXT_WIDTH 100
+#define TEXT_HEIGHT 20
+
+#define TEXT_Y 520
+#define TEXT_X ((WINDOW_WIDTH - TEXT_WIDTH) / 2)
+
+#define REMOTE_TEXT_Y 330
+#define REMOTE_TEXT_GAP 160
+
+#define REMOTE_OUTDRAW_GAP 160
+#define REMOTE_OUTDRAW_Y 270
+
+#define LOCAL_ID_X 350
+#define LOCAL_ID_Y 560
+
+#define REMOTE_ID_GAP 120
+#define REMOTE_ID_Y 240
+
+#define ID_WIDTH 90
+#define ID_HEIGHT 20
+
+#define LOCAL_NUM_X 750
+#define LOCAL_NUM_Y 560
+
+#define REMOTE_NUM_Y 210
+
+#define LOCAL_WAIT_Y 560
+#define REMOTE_WAIT_Y 180
+
+#define OVER_X 300
+#define OVER_Y 200
+#define OVER_WIDTH 600
+#define OVER_HEIGHT 200
+
+#endif // CONSTANT_H
