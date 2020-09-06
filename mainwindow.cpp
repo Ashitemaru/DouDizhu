@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow() {}
 
 void MainWindow::mousePressEvent(QMouseEvent* event) {
-    if (initDone) {
+    if (initDone && (game->getState() == gameState::DETERMINING || game->getState() == gameState::RUNNING)) {
         int x = event->x();
         int y = event->y();
 
